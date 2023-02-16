@@ -3,17 +3,22 @@ plugins {
 }
 
 android {
-    namespace 'com.tentcent.soundtouch'
+    namespace 'com.tencent.soundtouch'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.tentcent.soundtouch"
+        applicationId "com.tencent.soundtouch"
         minSdk 21
         targetSdk 33
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+//        externalNativeBuild.ndkBuild {
+//            arguments "NDK_APPLICATION=src/main/jni/Application.mk",
+//                    "APP_ALLOW_MISSING_DEPS:=true"
+//        }
     }
 
     buildTypes {
@@ -28,9 +33,12 @@ android {
     }
     externalNativeBuild {
         cmake {
-            path file('src/main/cpp/CMakeLists.txt')
+            path file('src/main/jni/CMakeLists.txt')
             version '3.18.1'
         }
+//        ndkBuild {
+//            path 'src/main/jni/Android.mk'
+//        }
     }
     buildFeatures {
         viewBinding true

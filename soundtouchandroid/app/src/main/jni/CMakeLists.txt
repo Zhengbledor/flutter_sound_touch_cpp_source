@@ -14,9 +14,9 @@ project("soundtouch")
 # You can define multiple libraries, and CMake builds them for you.
 # Gradle automatically packages shared libraries with your APK.
 
-include_directories(../cpp/include)
-include_directories(../cpp/source/SoundStretch)
-include_directories(../cpp/source/SoundTouch)
+include_directories(../abc/include)
+include_directories(../abc/source/SoundStretch)
+include_directories(../abc/source/SoundTouch)
 
 add_library( # Sets the name of the library.
         soundtouch
@@ -25,22 +25,22 @@ add_library( # Sets the name of the library.
         SHARED
 
         # Provides a relative path to your source file(s).
-        ../cpp/native-lib.cpp
-        ../cpp/source/SoundTouch/AAFilter.cpp
-        ../cpp/source/SoundTouch/BPMDetect.cpp
-        ../cpp/source/SoundTouch/cpu_detect_x86.cpp
-        ../cpp/source/SoundTouch/FIFOSampleBuffer.cpp
-        ../cpp/source/SoundTouch/FIRFilter.cpp
-        ../cpp/source/SoundTouch/InterpolateCubic.cpp
-        ../cpp/source/SoundTouch/InterpolateLinear.cpp
-        ../cpp/source/SoundTouch/InterpolateShannon.cpp
-        ../cpp/source/SoundTouch/mmx_optimized.cpp
-        ../cpp/source/SoundTouch/PeakFinder.cpp
-        ../cpp/source/SoundTouch/RateTransposer.cpp
-        ../cpp/source/SoundTouch/SoundTouch.cpp
-        ../cpp/source/SoundTouch/sse_optimized.cpp
-        ../cpp/source/SoundTouch/TDStretch.cpp
-        ../cpp/source/SoundStretch/WavFile.cpp)
+        ../abc/native-lib.cpp
+        ../abc/source/SoundTouch/AAFilter.cpp
+        ../abc/source/SoundTouch/BPMDetect.cpp
+        ../abc/source/SoundTouch/cpu_detect_x86.cpp
+        ../abc/source/SoundTouch/FIFOSampleBuffer.cpp
+        ../abc/source/SoundTouch/FIRFilter.cpp
+        ../abc/source/SoundTouch/InterpolateCubic.cpp
+        ../abc/source/SoundTouch/InterpolateLinear.cpp
+        ../abc/source/SoundTouch/InterpolateShannon.cpp
+        ../abc/source/SoundTouch/mmx_optimized.cpp
+        ../abc/source/SoundTouch/PeakFinder.cpp
+        ../abc/source/SoundTouch/RateTransposer.cpp
+        ../abc/source/SoundTouch/SoundTouch.cpp
+        ../abc/source/SoundTouch/sse_optimized.cpp
+        ../abc/source/SoundTouch/TDStretch.cpp
+        ../abc/source/SoundStretch/WavFile.cpp)
 
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because CMake includes system libraries in the search path by

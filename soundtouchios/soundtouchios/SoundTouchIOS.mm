@@ -5,13 +5,14 @@
 //  Created by 郑志豪 on 2023/2/17.
 //
 
-#import "soundtouchios.h"
+#import "SoundTouchIOS.h"
+#import "SoundTouchExtension.h"
 
-@implementation soundtouchios
+@implementation SoundTouchIOS
 long handle = 0;
  
 - (instancetype)init{
-    handle = soundtouch::newInstance();
+    handle = soundtouch::newSoundTouchInstance();
     return self;
 }
 +(NSString *)getVersionString{
@@ -23,15 +24,15 @@ long handle = 0;
     return errorMsg;
 }
 -(void)setPitch:(float)pitch{
-    soundtouch::setPitchSemiTones(handle,pitch);
+    soundtouch::setSoundTouchSpeed(handle,pitch);
 }
 -(void)setSpeed:(float)speed{
-    soundtouch::setSpeed(handle, speed);
+    soundtouch::setSoundTouchSpeed(handle, speed);
 }
 -(void)setTempo:(float)tempo{
-    soundtouch::setTempo(handle, tempo);
+    soundtouch::setSoundTouchTempo(handle, tempo);
 }
 -(int)processFile:(NSString *)inputFile outputFile:(NSString *)outputFile{
-    return soundtouch::processFile(handle, [inputFile UTF8String],[outputFile UTF8String]);
+    return soundtouch::processSoundTouchFile(handle, [inputFile UTF8String],[outputFile UTF8String]);
 }
 @end

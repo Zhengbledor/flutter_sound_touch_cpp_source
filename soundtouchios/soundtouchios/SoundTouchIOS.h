@@ -6,9 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "include/SoundTouchExtension.h"
 
-@interface soundtouchios : NSObject
+@interface SoundTouchIOS : NSObject
 +(NSString *)getVersionString;
 +(NSString *)getErrorMsg;
 -(void)setPitch:(float)pitch;

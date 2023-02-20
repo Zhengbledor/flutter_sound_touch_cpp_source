@@ -7,8 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		834B7993299F70EB00DB6FAE /* soundtouchios.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 834B7990299F70EB00DB6FAE /* soundtouchios.h */; };
-		834B79D3299F757100DB6FAE /* soundtouchios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 834B7991299F70EB00DB6FAE /* soundtouchios.mm */; };
+		83C11E7529A3A232003A02C3 /* SoundTouchIOS.h in Sources */ = {isa = PBXBuildFile; fileRef = 834B7990299F70EB00DB6FAE /* SoundTouchIOS.h */; };
+		83C11E7629A3A23B003A02C3 /* SoundTouchIOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 834B7990299F70EB00DB6FAE /* SoundTouchIOS.h */; };
+		83C11E7729A3A23E003A02C3 /* SoundTouchIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 834B7991299F70EB00DB6FAE /* SoundTouchIOS.mm */; };
+		83C11E7829A3A245003A02C3 /* SoundTouchExtension.h in Sources */ = {isa = PBXBuildFile; fileRef = 834B79D6299F9ABA00DB6FAE /* SoundTouchExtension.h */; };
+		83C11E7929A3A246003A02C3 /* FIFOSamplePipe.h in Sources */ = {isa = PBXBuildFile; fileRef = 834B79A0299F728A00DB6FAE /* FIFOSamplePipe.h */; };
+		83C11E7A29A3A24C003A02C3 /* soundtouch_config.h in Sources */ = {isa = PBXBuildFile; fileRef = 834B799F299F728A00DB6FAE /* soundtouch_config.h */; };
+		83C11E7B29A3A24F003A02C3 /* SoundTouch.h in Sources */ = {isa = PBXBuildFile; fileRef = 834B799E299F728A00DB6FAE /* SoundTouch.h */; };
+		83C11E7C29A3A252003A02C3 /* BPMDetect.h in Sources */ = {isa = PBXBuildFile; fileRef = 834B799D299F728A00DB6FAE /* BPMDetect.h */; };
+		83C11E7D29A3A253003A02C3 /* STTypes.h in Sources */ = {isa = PBXBuildFile; fileRef = 834B799C299F728A00DB6FAE /* STTypes.h */; };
+		83C11E7E29A3A254003A02C3 /* FIFOSampleBuffer.h in Sources */ = {isa = PBXBuildFile; fileRef = 834B799B299F728A00DB6FAE /* FIFOSampleBuffer.h */; };
+		83C11E7F29A3A255003A02C3 /* WavFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 834B79C2299F729500DB6FAE /* WavFile.cpp */; };
+		83C11E8029A3A256003A02C3 /* WavFile.h in Sources */ = {isa = PBXBuildFile; fileRef = 834B79C1299F729500DB6FAE /* WavFile.h */; };
+		83C11E8129A3A258003A02C3 /* SoundTouch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 834B79B9299F729500DB6FAE /* SoundTouch.cpp */; };
+		83C11E8229A3A25A003A02C3 /* AAFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 834B79B8299F729500DB6FAE /* AAFilter.cpp */; };
+		83C11E8329A3A25B003A02C3 /* InterpolateCubic.h in Sources */ = {isa = PBXBuildFile; fileRef = 834B79B7299F729500DB6FAE /* InterpolateCubic.h */; };
+		83C11E8429A3A25B003A02C3 /* cpu_detect.h in Sources */ = {isa = PBXBuildFile; fileRef = 834B79B6299F729500DB6FAE /* cpu_detect.h */; };
+		83C11E8529A3A25C003A02C3 /* InterpolateShannon.h in Sources */ = {isa = PBXBuildFile; fileRef = 834B79B5299F729500DB6FAE /* InterpolateShannon.h */; };
+		83C11E8629A3A25D003A02C3 /* TDStretch.h in Sources */ = {isa = PBXBuildFile; fileRef = 834B79B4299F729500DB6FAE /* TDStretch.h */; };
+		83C11E8729A3A25E003A02C3 /* PeakFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 834B79B3299F729500DB6FAE /* PeakFinder.cpp */; };
+		83C11E8829A3A267003A02C3 /* RateTransposer.h in Sources */ = {isa = PBXBuildFile; fileRef = 834B79B2299F729500DB6FAE /* RateTransposer.h */; };
+		83C11E8929A3A268003A02C3 /* cpu_detect_x86.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 834B79B1299F729500DB6FAE /* cpu_detect_x86.cpp */; };
+		83C11E8A29A3A269003A02C3 /* InterpolateLinear.h in Sources */ = {isa = PBXBuildFile; fileRef = 834B79B0299F729500DB6FAE /* InterpolateLinear.h */; };
+		83C11E8B29A3A269003A02C3 /* AAFilter.h in Sources */ = {isa = PBXBuildFile; fileRef = 834B79AF299F729500DB6FAE /* AAFilter.h */; };
+		83C11E8C29A3A26A003A02C3 /* sse_optimized.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 834B79AE299F729500DB6FAE /* sse_optimized.cpp */; };
+		83C11E8D29A3A26B003A02C3 /* FIFOSampleBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 834B79AD299F729500DB6FAE /* FIFOSampleBuffer.cpp */; };
+		83C11E8E29A3A26C003A02C3 /* FIRFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 834B79AC299F729500DB6FAE /* FIRFilter.cpp */; };
+		83C11E8F29A3A26C003A02C3 /* InterpolateLinear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 834B79AB299F729500DB6FAE /* InterpolateLinear.cpp */; };
+		83C11E9029A3A26D003A02C3 /* PeakFinder.h in Sources */ = {isa = PBXBuildFile; fileRef = 834B79AA299F729500DB6FAE /* PeakFinder.h */; };
+		83C11E9129A3A26E003A02C3 /* InterpolateCubic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 834B79A9299F729500DB6FAE /* InterpolateCubic.cpp */; };
+		83C11E9229A3A26F003A02C3 /* mmx_optimized.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 834B79A8299F729500DB6FAE /* mmx_optimized.cpp */; };
+		83C11E9329A3A26F003A02C3 /* BPMDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 834B79A7299F729500DB6FAE /* BPMDetect.cpp */; };
+		83C11E9429A3A271003A02C3 /* FIRFilter.h in Sources */ = {isa = PBXBuildFile; fileRef = 834B79A6299F729500DB6FAE /* FIRFilter.h */; };
+		83C11E9529A3A272003A02C3 /* InterpolateShannon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 834B79A5299F729500DB6FAE /* InterpolateShannon.cpp */; };
+		83C11E9629A3A273003A02C3 /* RateTransposer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 834B79A4299F729500DB6FAE /* RateTransposer.cpp */; };
+		83C11E9729A3A274003A02C3 /* TDStretch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 834B79A3299F729500DB6FAE /* TDStretch.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +51,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				834B7993299F70EB00DB6FAE /* soundtouchios.h in CopyFiles */,
+				83C11E7629A3A23B003A02C3 /* SoundTouchIOS.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +59,8 @@
 
 /* Begin PBXFileReference section */
 		834B798D299F70EB00DB6FAE /* libsoundtouchios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsoundtouchios.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		834B7990299F70EB00DB6FAE /* soundtouchios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = soundtouchios.h; sourceTree = "<group>"; };
-		834B7991299F70EB00DB6FAE /* soundtouchios.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = soundtouchios.mm; sourceTree = "<group>"; };
+		834B7990299F70EB00DB6FAE /* SoundTouchIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundTouchIOS.h; sourceTree = "<group>"; };
+		834B7991299F70EB00DB6FAE /* SoundTouchIOS.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SoundTouchIOS.mm; sourceTree = "<group>"; };
 		834B799B299F728A00DB6FAE /* FIFOSampleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIFOSampleBuffer.h; sourceTree = "<group>"; };
 		834B799C299F728A00DB6FAE /* STTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTypes.h; sourceTree = "<group>"; };
 		834B799D299F728A00DB6FAE /* BPMDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPMDetect.h; sourceTree = "<group>"; };
@@ -64,7 +97,6 @@
 		834B79BF299F729500DB6FAE /* misc.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = misc.xml; sourceTree = "<group>"; };
 		834B79C1299F729500DB6FAE /* WavFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavFile.h; sourceTree = "<group>"; };
 		834B79C2299F729500DB6FAE /* WavFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WavFile.cpp; sourceTree = "<group>"; };
-		834B79D4299F75A600DB6FAE /* SoundTouchExtension.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoundTouchExtension.cpp; sourceTree = "<group>"; };
 		834B79D6299F9ABA00DB6FAE /* SoundTouchExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundTouchExtension.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,8 +132,8 @@
 			children = (
 				834B79A1299F729500DB6FAE /* source */,
 				834B799A299F728A00DB6FAE /* include */,
-				834B7990299F70EB00DB6FAE /* soundtouchios.h */,
-				834B7991299F70EB00DB6FAE /* soundtouchios.mm */,
+				834B7990299F70EB00DB6FAE /* SoundTouchIOS.h */,
+				834B7991299F70EB00DB6FAE /* SoundTouchIOS.mm */,
 			);
 			path = soundtouchios;
 			sourceTree = "<group>";
@@ -125,7 +157,6 @@
 			children = (
 				834B79A2299F729500DB6FAE /* SoundTouch */,
 				834B79C0299F729500DB6FAE /* SoundStretch */,
-				834B79D4299F75A600DB6FAE /* SoundTouchExtension.cpp */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -239,7 +270,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				834B79D3299F757100DB6FAE /* soundtouchios.mm in Sources */,
+				83C11E9729A3A274003A02C3 /* TDStretch.cpp in Sources */,
+				83C11E9629A3A273003A02C3 /* RateTransposer.cpp in Sources */,
+				83C11E9529A3A272003A02C3 /* InterpolateShannon.cpp in Sources */,
+				83C11E9429A3A271003A02C3 /* FIRFilter.h in Sources */,
+				83C11E9329A3A26F003A02C3 /* BPMDetect.cpp in Sources */,
+				83C11E9229A3A26F003A02C3 /* mmx_optimized.cpp in Sources */,
+				83C11E9129A3A26E003A02C3 /* InterpolateCubic.cpp in Sources */,
+				83C11E9029A3A26D003A02C3 /* PeakFinder.h in Sources */,
+				83C11E8F29A3A26C003A02C3 /* InterpolateLinear.cpp in Sources */,
+				83C11E8E29A3A26C003A02C3 /* FIRFilter.cpp in Sources */,
+				83C11E8D29A3A26B003A02C3 /* FIFOSampleBuffer.cpp in Sources */,
+				83C11E8C29A3A26A003A02C3 /* sse_optimized.cpp in Sources */,
+				83C11E8B29A3A269003A02C3 /* AAFilter.h in Sources */,
+				83C11E8A29A3A269003A02C3 /* InterpolateLinear.h in Sources */,
+				83C11E8929A3A268003A02C3 /* cpu_detect_x86.cpp in Sources */,
+				83C11E8829A3A267003A02C3 /* RateTransposer.h in Sources */,
+				83C11E8729A3A25E003A02C3 /* PeakFinder.cpp in Sources */,
+				83C11E8629A3A25D003A02C3 /* TDStretch.h in Sources */,
+				83C11E8529A3A25C003A02C3 /* InterpolateShannon.h in Sources */,
+				83C11E8429A3A25B003A02C3 /* cpu_detect.h in Sources */,
+				83C11E8329A3A25B003A02C3 /* InterpolateCubic.h in Sources */,
+				83C11E8229A3A25A003A02C3 /* AAFilter.cpp in Sources */,
+				83C11E8129A3A258003A02C3 /* SoundTouch.cpp in Sources */,
+				83C11E8029A3A256003A02C3 /* WavFile.h in Sources */,
+				83C11E7F29A3A255003A02C3 /* WavFile.cpp in Sources */,
+				83C11E7E29A3A254003A02C3 /* FIFOSampleBuffer.h in Sources */,
+				83C11E7D29A3A253003A02C3 /* STTypes.h in Sources */,
+				83C11E7C29A3A252003A02C3 /* BPMDetect.h in Sources */,
+				83C11E7B29A3A24F003A02C3 /* SoundTouch.h in Sources */,
+				83C11E7A29A3A24C003A02C3 /* soundtouch_config.h in Sources */,
+				83C11E7929A3A246003A02C3 /* FIFOSamplePipe.h in Sources */,
+				83C11E7529A3A232003A02C3 /* SoundTouchIOS.h in Sources */,
+				83C11E7729A3A23E003A02C3 /* SoundTouchIOS.mm in Sources */,
+				83C11E7829A3A245003A02C3 /* SoundTouchExtension.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
